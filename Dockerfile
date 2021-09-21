@@ -1,6 +1,6 @@
 # syntax=docker/dockerfile:1
 
-FROM openjdk:14-windowsservercore-1809
+FROM openjdk:14-windowsservercore-ltsc2016
 
 COPY .mvn/ .mvn
 COPY mvnw pom.xml ./
