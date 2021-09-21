@@ -2,10 +2,10 @@
 
 FROM openjdk:16-alpine3.13
 
-COPY .mnv/ .mvn
+COPY .mvn/ .mvn
 COPY mvnw pom.xml ./
 
-RUN ./mvn dependency:go-offline
+RUN ./mvnw dependency:go-offline
 
 COPY src ./src
 

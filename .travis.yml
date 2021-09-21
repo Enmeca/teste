@@ -1,4 +1,5 @@
 language: java
+sudo: true
 jdk: openjdk14
 
 cache:
@@ -7,3 +8,6 @@ cache:
 
 script:
     "mvn clean install"
+
+before_install:
+  - chmod +x mvnw
