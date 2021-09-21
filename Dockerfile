@@ -3,7 +3,7 @@
 FROM openjdk:16-alpine3.13
 
 COPY .mnv/ .mvn
-COPY mnvw pom.xml ./
+COPY mvnw pom.xml ./
 
 RUN ./mvn dependency:go-offline
 
