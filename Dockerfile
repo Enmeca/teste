@@ -1,3 +1,5 @@
+# syntax=docker/dockerfile:1
+
 FROM openjdk:14-windowsservercore
 COPY pom.xml ./
 
