@@ -1,5 +1,5 @@
 FROM openjdk:14-windowsservercore
-COPY pom.xml
+COPY pom.xml ./
 
 RUN mvn dependency:go-offline
 
